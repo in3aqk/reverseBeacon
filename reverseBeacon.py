@@ -2,7 +2,7 @@ import sys
 import telnetlib
 
 HOST = "telnet.reversebeacon.net"
-call = "in3aqk"
+call = ""  #insert your CALL
 port = 7000
 tn = telnetlib.Telnet(HOST,port,timeout=5)
 
