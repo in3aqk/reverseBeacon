@@ -1,2 +1,2 @@
 # reverseBeacon
-Python Revers Beacon CW grabber
+Python Reverse Beacon CW grabber for QRS QSO
