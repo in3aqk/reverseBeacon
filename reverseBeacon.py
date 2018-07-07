@@ -2,7 +2,7 @@ import sys
 import telnetlib
 
 HOST = "telnet.reversebeacon.net"
-call = ""  #insert your CALL
+call = " "  #insert your CALL
 port = 7000
 tn = telnetlib.Telnet(HOST,port,timeout=5)
 
@@ -16,7 +16,7 @@ while True:
             speed = int(lineArr[8])
             if speed <= 14 and lineArr[10] == 'CQ':
                 result = "%s\t\t%s\t%s\t%s wpm\t%s\t%s" % (lineArr[3],lineArr[4],lineArr[5],lineArr[8],lineArr[10],lineArr[11])
-                print result
+                print (result)
         except ValueError:
             print "Conversion error"
 
